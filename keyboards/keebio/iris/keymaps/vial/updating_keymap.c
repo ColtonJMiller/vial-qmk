@@ -29,6 +29,44 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
+
+[
+  //┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐
+        KC_NO,     KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,                                 KC_CIRC,    KC_AMPR,    KC_ASTR,   KC_LPRN,     KC_RPRN,    KC_BSPC,
+        QK_BOOT,   KC_NO,      KC_NO,      KC_UP,      KC_NO,      KC_NO,KC_6,KC_7,KC_8,KC_9,KC_0,KC_TRNS,
+      KC_DEL,
+      KC_NO,
+      KC_LEFT,
+      KC_DOWN,
+      KC_RGHT,
+      KC_NO,
+      KC_RBRC,
+      KC_P4,
+      KC_P5,
+      KC_P6,
+      KC_PLUS,
+      KC_PIPE,
+      BL_STEP,
+      KC_NO,
+      KC_NO,
+      KC_NO,
+      KC_NO,
+      KC_NO,
+      KC_LPRN,
+      KC_RPRN,
+      KC_RCBR,
+      KC_P1,
+      KC_P2,
+      KC_P3,
+      KC_MINS,
+      KC_TRNS,
+      KC_TRNS,
+      KC_TRNS,
+      KC_DEL,
+      KC_DEL,
+      KC_TRNS,
+      KC_TRNS
+    ]
   [_LOWER] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
      KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC,
