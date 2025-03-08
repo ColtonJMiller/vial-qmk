@@ -169,35 +169,35 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 }
 
 
-bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
-      // const int led_index = 2;
-   const int length = 17;
-   int test[17] = {1,4,7,11,17,18,19,24,27,31,35,38,41,58,61,65};
-   switch(get_highest_layer(layer_state|default_layer_state)) {
-      case 1:
-            rgb_matrix_set_color(0,152,57,3);
-         break;
-      case 2:
-            rgb_matrix_set_color(0,1,70,3);
-         break;
-      case 4:
-            rgb_matrix_set_color(0,152,0,0);
-         break;        
-      case 5:     
-         for (int i = 0; i < length; i++) {
-            rgb_matrix_set_color(test[i],174,0,97);
-         }         
-         break;
-      case 6:     
-         for (int i = 0; i < length; i++) {
-            rgb_matrix_set_color(test[i],153,128,0);
-         }         
-         break;
-      default:
-            break;
-   }
-   return false;
-}
+// bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+//       // const int led_index = 2;
+//    const int length = 17;
+//    int test[17] = {1,4,7,11,17,18,19,24,27,31,35,38,41,58,61,65};
+//    switch(get_highest_layer(layer_state|default_layer_state)) {
+//       case 1:
+//             rgb_matrix_set_color(0,152,57,3);
+//          break;
+//       case 2:
+//             rgb_matrix_set_color(0,1,70,3);
+//          break;
+//       case 4:
+//             rgb_matrix_set_color(0,152,0,0);
+//          break;        
+//       case 5:     
+//          for (int i = 0; i < length; i++) {
+//             rgb_matrix_set_color(test[i],174,0,97);
+//          }         
+//          break;
+//       case 6:     
+//          for (int i = 0; i < length; i++) {
+//             rgb_matrix_set_color(test[i],153,128,0);
+//          }         
+//          break;
+//       default:
+//             break;
+//    }
+//    return false;
+// }
 
 // bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 //     for (uint8_t i = led_min; i < led_max; i++) {
